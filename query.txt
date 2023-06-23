@@ -1,0 +1,39 @@
+Here are some common queries that may arise when coding the problem of creating 2D shapes in modern OpenGL:
+
+1. How to initialize and set up an OpenGL context?
+   - You need to include the necessary headers (`#include <GL/glew.h>` and `#include <GLFW/glfw3.h>`).
+   - Initialize GLFW using `glfwInit()`.
+   - Create a GLFW window using `glfwCreateWindow()`.
+   - Set the current context using `glfwMakeContextCurrent()`.
+   - Initialize GLEW using `glewInit()`.
+
+2. How to handle the rendering loop?
+   - Use a `while` loop and check for the window close event using `glfwWindowShouldClose()`.
+   - Clear the color buffer using `glClear()` at the beginning of each frame.
+   - Perform the necessary transformations, set the color, and draw the desired shapes.
+   - Swap the front and back buffers using `glfwSwapBuffers()`.
+   - Poll for events using `glfwPollEvents()`.
+
+3. How to draw a 2D shape using modern OpenGL?
+   - Use `glBegin(GL_TRIANGLES)` to specify the primitive type (in this case, triangles).
+   - Use `glVertex2f()` to specify the vertices of the shape.
+   - Call `glEnd()` to finish defining the shape.
+
+4. How to set the color of a shape?
+   - Use `glColor3f()` or `glColor4f()` to set the desired RGB or RGBA color values.
+
+5. How to transform and position shapes?
+   - Use transformation functions like `glLoadIdentity()`, `glTranslatef()`, and `glRotatef()` to apply translation and rotation transformations.
+
+6. How to handle errors and debug OpenGL code?
+   - Check for errors using `glGetError()` after each OpenGL function call.
+   - Print error messages or handle errors using appropriate error handling techniques.
+   - Use debug tools like `glDebugMessageCallback()` or OpenGL debugging extensions to capture and analyze OpenGL errors.
+
+7. How to include comments and format the code properly?
+   - Use comments to explain the purpose of lines or sections of code, describe algorithms, or document any issues or workarounds.
+   - Follow a consistent code formatting style, including indentation, spacing, and code organization.
+
+Remember to refer to the provided tutorial resources, relevant documentation, and OpenGL references for further guidance and to deepen your understanding of modern OpenGL concepts and techniques.
+
+If you encounter specific issues or have more detailed questions while coding, feel free to ask for assistance.
